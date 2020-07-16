@@ -7,7 +7,6 @@ import preset from "jss-preset-default";
 import "./App.css";
 import MyComponent from "./MyComponent";
 import ThemedComponent from "./ThemedComponent";
-import NotThemedComponent from "./NotThemedComponent";
 import { StaticComponent } from "./StaticComponent";
 
 const setupJss = () => {
@@ -38,11 +37,14 @@ function App() {
   return (
     <JssProvider registry={sheets}>
       <div className="App">
-        <CircularProgress color="secondary" />
-        <StaticComponent />
-        <MyComponent />
+        <h3>Themed Component</h3>
         <ThemedComponent />
-        <NotThemedComponent />
+        <h3>HOC Component</h3>
+        <MyComponent />
+        <h3>Static Component</h3>
+        <StaticComponent />
+        <h3>MUI Component</h3>
+        <CircularProgress color="secondary" />
       </div>
     </JssProvider>
   );
