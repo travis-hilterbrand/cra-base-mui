@@ -4,7 +4,7 @@ import withStyles from "react-jss";
 export const styles = {
   root: {
     width: 80,
-    height: 90,
+    height: 80,
     background: "red",
   },
 };
